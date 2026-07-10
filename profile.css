@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: "sans-serif";
+}
+body{
+    display: flex;
+    background-color: #1a1a1a;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    overflow:hidden;
+}
+.menu{
+    background-color: #17233c;
+    width: 80px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+    padding: 0;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    background-color: #435271;
+    padding: 10px;
+    margin:10px 0;
+    border-radius: 8px;
+    gap: 15px;
+    transition: 0.5s;
+}
+ul li a:hover,
+.data-info .box{
+    background-color: #c7c4c4a6;
+    transform: translateX(5px);
+}
+.log-out{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+.log-out a{
+    background-color: #910202;
+}
+ul li a i{
+    font-size: 20px;
+    margin:0;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    background-color: #435271;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+    margin-bottom: 15px;
+
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    height: 150px;
+    background-color: #798294;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.data-info .box i{
+    font-size: 40px;
+
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 30px;
+}
+.data-info .box .data p{
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+}
+
+
